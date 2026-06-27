@@ -12,6 +12,6 @@ Fork of [lark-channel-bridge](https://github.com/zarazhangrui/feishu-claude-code
 ## Install
 
 ```bash
-npm install -g lark-channel-bridge-ds
+npm install -g https://github.com/xhbCloud/lark-coding-agent-bridge-ds
 lark-channel-bridge-ds run --skip-check-lark-cli
 ```
