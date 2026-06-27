@@ -1,0 +1,67 @@
+{
+  "name": "lark-channel-bridge-ds",
+  "version": "0.3.2",
+  "description": "Fork of lark-channel-bridge with DeepSeek CL and Windows fixes",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xhbCloud/lark-coding-agent-bridge-ds.git"
+  },
+  "bugs": {
+    "url": "https://github.com/xhbCloud/lark-coding-agent-bridge-ds/issues"
+  },
+  "homepage": "https://github.com/xhbCloud/lark-coding-agent-bridge-ds#readme",
+  "bin": {
+    "lark-channel-bridge-ds": "./bin/lark-channel-bridge-ds.mjs"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "bin",
+    "README.md",
+    "LICENSE"
+  ],
+  "dependencies": {
+    "@clack/prompts": "^1.4.0",
+    "@larksuite/channel": "^0.2.0",
+    "commander": "^12.1.0",
+    "cross-spawn": "^7.0.6",
+    "graceful-fs": "^4.2.11",
+    "proper-lockfile": "^4.1.2",
+    "qrcode-terminal": "^0.12.0"
+  },
+  "devDependencies": {
+    "@types/cross-spawn": "^6.0.6",
+    "@types/graceful-fs": "^4.1.9",
+    "@types/node": "^22.10.0",
+    "@types/proper-lockfile": "^4.1.4",
+    "@types/qrcode-terminal": "^0.12.2",
+    "tsup": "^8.3.5",
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.8"
+  },
+  "engines": {
+    "node": ">=20.12.0"
+  },
+  "keywords": [
+    "feishu",
+    "lark",
+    "claude",
+    "claude-code",
+    "deepseek",
+    "cli",
+    "channel",
+    "bridge"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "tsup",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run --passWithNoTests"
+  }
+}
