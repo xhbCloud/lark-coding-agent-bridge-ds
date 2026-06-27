@@ -9,9 +9,4 @@ Fork of [lark-channel-bridge](https://github.com/zarazhangrui/feishu-claude-code
 - **Race condition fix** — removed `closeSilentStdout` 50ms destroy that caused empty replies
 - **ESM compat** — removed `require('fs')` from ESM context
 
-## Install
 
-```bash
-npm install -g https://github.com/xhbCloud/lark-coding-agent-bridge-ds
-lark-channel-bridge-ds run --skip-check-lark-cli
-```
